@@ -13,6 +13,9 @@
 		1C1EB04329FA71CB00CF32F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C1EB04129FA71CB00CF32F9 /* Main.storyboard */; };
 		1C1EB04529FA71CD00CF32F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C1EB04429FA71CD00CF32F9 /* Assets.xcassets */; };
 		1C1EB04829FA71CD00CF32F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C1EB04629FA71CD00CF32F9 /* LaunchScreen.storyboard */; };
+		1C1EB05129FA73D300CF32F9 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1C1EB05029FA73D300CF32F9 /* SnapKit */; };
+		1C1EB05329FA770400CF32F9 /* WeatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1EB05229FA770400CF32F9 /* WeatherVC.swift */; };
+		1C47DBA429FFBDA60036BF2A /* WeekWetherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C47DBA329FFBDA60036BF2A /* WeekWetherVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,8 @@
 		1C1EB04429FA71CD00CF32F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C1EB04729FA71CD00CF32F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C1EB04929FA71CD00CF32F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C1EB05229FA770400CF32F9 /* WeatherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVC.swift; sourceTree = "<group>"; };
+		1C47DBA329FFBDA60036BF2A /* WeekWetherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekWetherVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C1EB05129FA73D300CF32F9 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +62,7 @@
 		1C1EB03A29FA71CB00CF32F9 /* Neobis_iOS_UIScreens */ = {
 			isa = PBXGroup;
 			children = (
+				1C47DBA229FFBD8E0036BF2A /* Wether */,
 				1C1EB03B29FA71CB00CF32F9 /* AppDelegate.swift */,
 				1C1EB03D29FA71CB00CF32F9 /* SceneDelegate.swift */,
 				1C1EB03F29FA71CB00CF32F9 /* ViewController.swift */,
@@ -65,6 +72,15 @@
 				1C1EB04929FA71CD00CF32F9 /* Info.plist */,
 			);
 			path = Neobis_iOS_UIScreens;
+			sourceTree = "<group>";
+		};
+		1C47DBA229FFBD8E0036BF2A /* Wether */ = {
+			isa = PBXGroup;
+			children = (
+				1C1EB05229FA770400CF32F9 /* WeatherVC.swift */,
+				1C47DBA329FFBDA60036BF2A /* WeekWetherVC.swift */,
+			);
+			path = Wether;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +99,9 @@
 			dependencies = (
 			);
 			name = Neobis_iOS_UIScreens;
+			packageProductDependencies = (
+				1C1EB05029FA73D300CF32F9 /* SnapKit */,
+			);
 			productName = Neobis_iOS_UIScreens;
 			productReference = 1C1EB03829FA71CB00CF32F9 /* Neobis_iOS_UIScreens.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +130,9 @@
 				Base,
 			);
 			mainGroup = 1C1EB02F29FA71CB00CF32F9;
+			packageReferences = (
+				1C1EB04F29FA73D300CF32F9 /* XCRemoteSwiftPackageReference "Snapkit" */,
+			);
 			productRefGroup = 1C1EB03929FA71CB00CF32F9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,8 +161,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C1EB04029FA71CB00CF32F9 /* ViewController.swift in Sources */,
+				1C47DBA429FFBDA60036BF2A /* WeekWetherVC.swift in Sources */,
 				1C1EB03C29FA71CB00CF32F9 /* AppDelegate.swift in Sources */,
 				1C1EB03E29FA71CB00CF32F9 /* SceneDelegate.swift in Sources */,
+				1C1EB05329FA770400CF32F9 /* WeatherVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +382,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1C1EB04F29FA73D300CF32F9 /* XCRemoteSwiftPackageReference "Snapkit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Snapkit/Snapkit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1C1EB05029FA73D300CF32F9 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C1EB04F29FA73D300CF32F9 /* XCRemoteSwiftPackageReference "Snapkit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1C1EB03029FA71CB00CF32F9 /* Project object */;
 }
