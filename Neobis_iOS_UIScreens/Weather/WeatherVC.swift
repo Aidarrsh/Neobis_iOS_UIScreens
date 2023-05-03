@@ -51,15 +51,14 @@ class WeatherClass : UIViewController {
     
     let locationImage: UIImageView = {
         let image = UIImageView()
-        image.image = UIImage(named: "Vector")
+        image.image = UIImage(named: "Frame")
         
         return image
     }()
     
     let arrowImage: UIImageView = {
         let image = UIImageView()
-        image.image = UIImage(systemName: "chevron.down")
-        image.tintColor = .white
+        image.image = UIImage(named: "opt")
         
         return image
     }()
@@ -79,8 +78,7 @@ class WeatherClass : UIViewController {
     
     let notificationImage: UIImageView = {
         let image = UIImageView()
-        image.image = UIImage(systemName: "bell.badge")
-        image.tintColor = .white
+        image.image = UIImage(named: "Group 652")
         
         return image
     }()
@@ -165,8 +163,7 @@ class WeatherClass : UIViewController {
     
     let windImage: UIImageView = {
         let image = UIImageView()
-        image.image = UIImage(systemName: "wind")
-        image.tintColor = .white
+        image.image = UIImage(named: "Ветер 1")
         image.layer.shadowColor = UIColor.black.cgColor
         image.layer.shadowOffset = CGSize(width: 2, height: 2)
         image.layer.shadowRadius = 7
@@ -203,8 +200,7 @@ class WeatherClass : UIViewController {
     
     let rainDropImage: UIImageView = {
         let image = UIImageView()
-        image.image = UIImage(systemName: "drop")
-        image.tintColor = .white
+        image.image = UIImage(named: "Дождь")
         image.layer.shadowColor = UIColor.black.cgColor
         image.layer.shadowOffset = CGSize(width: 2, height: 2)
         image.layer.shadowRadius = 7
@@ -226,19 +222,24 @@ class WeatherClass : UIViewController {
         return cLabel
     }()
     
+    let arrowUpImage : UIImageView = {
+        let image = UIImageView()
+        image.image = UIImage(named: "Vector")
+        
+        return image
+    }()
+    
     let weekInfoViewButton: UIButton = {
         let button = UIButton(type: .system)
         button.backgroundColor = .white
-        button.layer.cornerRadius = 15 // half of the button height
+        button.layer.cornerRadius = 15
         button.layer.shadowColor = UIColor.black.cgColor
         button.layer.shadowOffset = CGSize(width: 0, height: 2)
         button.layer.shadowRadius = 4
         button.layer.shadowOpacity = 0.2
-        button.setTitle("Прогноз на неделю", for: .normal)
+        button.setTitle("Прогноз на неделю ", for: .normal)
         button.tintColor = UIColor(red: 68/255, green: 78/255, blue: 114/255, alpha: 1)
-        button.setImage(UIImage(systemName: "chevron.up"), for: .normal)
-        button.semanticContentAttribute = .forceRightToLeft
-        
+
         return button
     }()
 
@@ -280,6 +281,7 @@ class WeatherClass : UIViewController {
         view.addSubview(rainDropImage)
         view.addSubview(rainPercentage)
         view.addSubview(weekInfoViewButton)
+        view.addSubview(arrowUpImage)
         
         weekInfoViewButton.addTarget(self, action: #selector(weekInfoButtonPressed), for: .touchUpInside)
     }
@@ -312,6 +314,7 @@ class WeatherClass : UIViewController {
         rainDropImage.translatesAutoresizingMaskIntoConstraints = false
         rainPercentage.translatesAutoresizingMaskIntoConstraints = false
         weekInfoViewButton.translatesAutoresizingMaskIntoConstraints = false
+        arrowUpImage.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
             sunImage.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -349,8 +352,6 @@ class WeatherClass : UIViewController {
             
             arrowImage.centerYAnchor.constraint(equalTo: locationImage.centerYAnchor),
             arrowImage.leadingAnchor.constraint(equalTo: cityLabel.trailingAnchor, constant: 20),
-            arrowImage.widthAnchor.constraint(equalToConstant: 10),
-            arrowImage.heightAnchor.constraint(equalToConstant: 16),
             
             notificationImage.centerYAnchor.constraint(equalTo: locationImage.centerYAnchor),
             notificationImage.trailingAnchor.constraint(equalTo: infoView.trailingAnchor),
@@ -392,6 +393,9 @@ class WeatherClass : UIViewController {
             weekInfoViewButton.topAnchor.constraint(equalTo: infoView.bottomAnchor, constant: 50),
             weekInfoViewButton.widthAnchor.constraint(equalToConstant: 230),
             weekInfoViewButton.heightAnchor.constraint(equalToConstant: 50),
+            
+            arrowUpImage.centerYAnchor.constraint(equalTo: weekInfoViewButton.centerYAnchor),
+            arrowUpImage.trailingAnchor.constraint(equalTo: weekInfoViewButton.trailingAnchor, constant: -25),
         ])
     }
 }

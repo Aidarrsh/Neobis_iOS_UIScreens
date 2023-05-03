@@ -30,6 +30,7 @@ class ViewController: UIViewController {
         
         kryptoButton.setTitle("Krypto", for: .normal)
         kryptoButton.setTitleColor(.systemBlue, for: .normal)
+        kryptoButton.addTarget(self, action: #selector (kryptoButtonTapped), for: .touchUpInside)
         
         financeButton.setTitle("Finance", for: .normal)
         financeButton.setTitleColor(.systemBlue, for: .normal)
@@ -44,10 +45,33 @@ class ViewController: UIViewController {
     @objc func weatherButtonTapped() {
         
         let vc = WeatherClass()
-        vc.view.backgroundColor = .white
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    @objc func kryptoButtonTapped() {
+        
+        let vc = KryptoClass()
+        
+        vc.view.backgroundColor = .white
+        navigationController?.pushViewController(vc, animated: true)
+//        let tabBar = UITabBarController()
+//
+//        let vc1 = KryptoClass()
+//        let vc2 = UIViewController()
+//        let vc3 = UIViewController()
+//
+//        vc2.view.backgroundColor = .red
+//        vc3.view.backgroundColor = .blue
+//        tabBar.tabBar.layer.borderColor = .init(red: 235/255, green: 239/255, blue: 245/255, alpha: 100)
+//
+//        tabBar.setViewControllers([vc1, vc2, vc3], animated: false)
+//
+//        tabBar.modalPresentationStyle = .fullScreen
+//
+//        present(tabBar, animated: true)
+            
+    }
+
     func addToView(){
         
         view.addSubview(weatherButton)
