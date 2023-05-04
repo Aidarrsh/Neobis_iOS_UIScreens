@@ -61,18 +61,20 @@ class KryptoClass : UITabBarController {
         
     ]
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.tintColor = UIColor.blue
         view.backgroundColor = .white
         
-        addToView()
-        constraints()
-        
         tableView.rowHeight = 90
         tableView.dataSource = self
         tableView.register(TableViewCell.self, forCellReuseIdentifier: "cell")
         
+        tabBar.frame.size.height = 75
+        
+        addToView()
+        constraints()
     }
     
     func addToView(){
@@ -107,7 +109,7 @@ class KryptoClass : UITabBarController {
             
             tableView.topAnchor.constraint(equalTo: expandLabel.bottomAnchor, constant: 10),
 //            tableView.bottomAnchor.constraint(equalTo: view.topAnchor, constant: 120),
-            tableView.heightAnchor.constraint(equalToConstant: CGFloat(cryptos.count * 90)),
+            tableView.heightAnchor.constraint(equalToConstant: CGFloat(cryptos.count * 95)),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])

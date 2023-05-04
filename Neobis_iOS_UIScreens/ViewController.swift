@@ -50,7 +50,7 @@ class ViewController: UIViewController {
     
     @objc func kryptoButtonTapped() {
         
-        let vc = KryptoClass()
+        let vc = MainTabBarC()
         
         vc.view.backgroundColor = .white
         navigationController?.pushViewController(vc, animated: true)
