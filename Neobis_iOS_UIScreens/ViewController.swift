@@ -34,6 +34,7 @@ class ViewController: UIViewController {
         
         financeButton.setTitle("Finance", for: .normal)
         financeButton.setTitleColor(.systemBlue, for: .normal)
+        financeButton.addTarget(self, action: #selector (financeButtonTapped), for: .touchUpInside)
         
         travelButton.setTitle("Travel", for: .normal)
         travelButton.setTitleColor(.systemBlue, for: .normal)
@@ -70,6 +71,12 @@ class ViewController: UIViewController {
 //
 //        present(tabBar, animated: true)
             
+    }
+    
+    @objc func financeButtonTapped() {
+        
+        let vc = FinanceMainTabBarC()
+        navigationController?.pushViewController(vc, animated: true)
     }
 
     func addToView(){

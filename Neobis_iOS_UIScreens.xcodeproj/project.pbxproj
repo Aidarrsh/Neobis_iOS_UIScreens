@@ -11,6 +11,8 @@
 		1C0D1A742A023271008779FA /* NSObject + TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0D1A732A023271008779FA /* NSObject + TableView.swift */; };
 		1C0D1A762A02CC1F008779FA /* MainTabBarC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0D1A752A02CC1F008779FA /* MainTabBarC.swift */; };
 		1C0D1A792A037279008779FA /* FinanceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0D1A782A037279008779FA /* FinanceVC.swift */; };
+		1C0D1A7B2A0372CD008779FA /* FinanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0D1A7A2A0372CD008779FA /* FinanceTableViewCell.swift */; };
+		1C0D1A7D2A0372E2008779FA /* FinanceMainTabBarC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0D1A7C2A0372E2008779FA /* FinanceMainTabBarC.swift */; };
 		1C1EB03C29FA71CB00CF32F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1EB03B29FA71CB00CF32F9 /* AppDelegate.swift */; };
 		1C1EB03E29FA71CB00CF32F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1EB03D29FA71CB00CF32F9 /* SceneDelegate.swift */; };
 		1C1EB04029FA71CB00CF32F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1EB03F29FA71CB00CF32F9 /* ViewController.swift */; };
@@ -28,6 +30,8 @@
 		1C0D1A732A023271008779FA /* NSObject + TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject + TableView.swift"; sourceTree = "<group>"; };
 		1C0D1A752A02CC1F008779FA /* MainTabBarC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarC.swift; sourceTree = "<group>"; };
 		1C0D1A782A037279008779FA /* FinanceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceVC.swift; sourceTree = "<group>"; };
+		1C0D1A7A2A0372CD008779FA /* FinanceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceTableViewCell.swift; sourceTree = "<group>"; };
+		1C0D1A7C2A0372E2008779FA /* FinanceMainTabBarC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceMainTabBarC.swift; sourceTree = "<group>"; };
 		1C1EB03829FA71CB00CF32F9 /* Neobis_iOS_UIScreens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neobis_iOS_UIScreens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C1EB03B29FA71CB00CF32F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C1EB03D29FA71CB00CF32F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 			isa = PBXGroup;
 			children = (
 				1C0D1A782A037279008779FA /* FinanceVC.swift */,
+				1C0D1A7A2A0372CD008779FA /* FinanceTableViewCell.swift */,
+				1C0D1A7C2A0372E2008779FA /* FinanceMainTabBarC.swift */,
 			);
 			path = Finance;
 			sourceTree = "<group>";
@@ -205,7 +211,9 @@
 				1C0D1A742A023271008779FA /* NSObject + TableView.swift in Sources */,
 				1C1EB03C29FA71CB00CF32F9 /* AppDelegate.swift in Sources */,
 				1C0D1A762A02CC1F008779FA /* MainTabBarC.swift in Sources */,
+				1C0D1A7B2A0372CD008779FA /* FinanceTableViewCell.swift in Sources */,
 				1C1EB03E29FA71CB00CF32F9 /* SceneDelegate.swift in Sources */,
+				1C0D1A7D2A0372E2008779FA /* FinanceMainTabBarC.swift in Sources */,
 				1C0D1A792A037279008779FA /* FinanceVC.swift in Sources */,
 				1C0D1A712A0231D6008779FA /* TableViewCell.swift in Sources */,
 				1C1EB05329FA770400CF32F9 /* WeatherVC.swift in Sources */,
