@@ -142,7 +142,7 @@ class FinanceClass : UIViewController {
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             
             expandLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            expandLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -65)
+            expandLabel.topAnchor.constraint(equalTo: tableView.topAnchor, constant: CGFloat(finances.count * 75))
         ])
     }
     
