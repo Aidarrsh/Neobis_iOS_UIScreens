@@ -1,22 +1,14 @@
 //
-//  MainTabBarC.swift
+//  LastMainTabBarC.swift
 //  Neobis_iOS_UIScreens
 //
-//  Created by Айдар Шарипов on 3/5/23.
+//  Created by Айдар Шарипов on 4/5/23.
 //
 
 import Foundation
 import UIKit
 
-let pieImage : UIImageView = {
-    let image = UIImageView()
-    image.image = UIImage(named: "pie_chart_75")
-    image.backgroundColor = .yellow
-    
-    return image
-}()
-
-class FinanceMainTabBarC: UITabBarController {
+class LastMainTabBarC: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,14 +22,14 @@ class FinanceMainTabBarC: UITabBarController {
     
     func setupTabBar() {
         
-        let vc = FinanceClass()
+        let vc = LastClass()
         
-        vc.tabBarItem = UITabBarItem(title: "Главная", image: pieImage.image?.withAlignmentRectInsets(.init(top: 0, left: 0, bottom: 0, right: 0)), tag: 0)
+        vc.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "Активная")?.withAlignmentRectInsets(.init(top: 10, left: 0, bottom: 0, right: 0)), tag: 0)
         
-        let vc1 = createVC(vc: UIViewController(), itemName: "Отчёты", itemImage: "Union 2")
+        let vc1 = createVC(vc: UIViewController(), itemName: "", itemImage: "Отчёты")
         vc1.view.backgroundColor = .white
         
-        let vc2 = createVC(vc: UIViewController(), itemName: "Профиль", itemImage: "Union-2")
+        let vc2 = createVC(vc: UIViewController(), itemName: "Profile", itemImage: "Union-2")
         vc2.view.backgroundColor = .white
         
         viewControllers = [vc, vc1, vc2]
@@ -45,7 +37,7 @@ class FinanceMainTabBarC: UITabBarController {
     
     func createVC(vc: UIViewController, itemName: String, itemImage: String) -> UINavigationController {
         
-        let item = UITabBarItem(title: itemName, image: UIImage(named: itemImage)?.withAlignmentRectInsets(.init(top: 00, left: 0, bottom: 0, right: 0)), tag: 0)
+        let item = UITabBarItem(title: itemName, image: UIImage(named: itemImage)?.withAlignmentRectInsets(.init(top: 10, left: 0, bottom: 0, right: 0)), tag: 0)
         
         item.titlePositionAdjustment = .init(horizontal: 0, vertical: 0)
         

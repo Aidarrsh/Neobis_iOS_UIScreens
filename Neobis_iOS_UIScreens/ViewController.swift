@@ -38,9 +38,11 @@ class ViewController: UIViewController {
         
         travelButton.setTitle("Travel", for: .normal)
         travelButton.setTitleColor(.systemBlue, for: .normal)
+        travelButton.addTarget(self, action: #selector (travelButtonTapped), for: .touchUpInside)
         
         lastButton.setTitle("Last", for: .normal)
         lastButton.setTitleColor(.systemBlue, for: .normal)
+        lastButton.addTarget(self, action: #selector (lastButtonTapped), for: .touchUpInside)
     }
     
     @objc func weatherButtonTapped() {
@@ -76,6 +78,17 @@ class ViewController: UIViewController {
     @objc func financeButtonTapped() {
         
         let vc = FinanceMainTabBarC()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc func lastButtonTapped() {
+        
+        let vc = LastMainTabBarC()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc func travelButtonTapped() {
+        let vc = TravelClass()
         navigationController?.pushViewController(vc, animated: true)
     }
 

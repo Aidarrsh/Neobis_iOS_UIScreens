@@ -164,7 +164,7 @@ extension FinanceClass: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! FinanceTableViewCell
-        let crypto = finances[indexPath.row]
+        let finance = finances[indexPath.row]
         
         switch indexPath.row {
         case 0:
@@ -186,10 +186,10 @@ extension FinanceClass: UITableViewDataSource, UITableViewDelegate {
         }
         
 
-        cell.image.image = UIImage(named: crypto.image)
-        cell.nameLabel.text = crypto.nameLabel
-        cell.priceLabel.text = crypto.priceLabel
-        cell.cryptoPriceLabel.text = crypto.cryptoPriceLabel
+        cell.image.image = UIImage(named: finance.image)
+        cell.nameLabel.text = finance.nameLabel
+        cell.priceLabel.text = finance.priceLabel
+        cell.cryptoPriceLabel.text = finance.cryptoPriceLabel
         
         cell.selectionStyle = .none
         

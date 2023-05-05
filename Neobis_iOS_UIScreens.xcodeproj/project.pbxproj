@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C0358002A0398F7008044D0 /* LastVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0357FF2A0398F7008044D0 /* LastVC.swift */; };
+		1C0358022A03991B008044D0 /* LastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0358012A03991B008044D0 /* LastTableViewCell.swift */; };
+		1C0358042A03995A008044D0 /* LastMainTabBarC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0358032A03995A008044D0 /* LastMainTabBarC.swift */; };
+		1C0358072A04F604008044D0 /* TravelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0358062A04F604008044D0 /* TravelVC.swift */; };
 		1C0D1A712A0231D6008779FA /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0D1A702A0231D6008779FA /* TableViewCell.swift */; };
-		1C0D1A742A023271008779FA /* NSObject + TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0D1A732A023271008779FA /* NSObject + TableView.swift */; };
 		1C0D1A762A02CC1F008779FA /* MainTabBarC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0D1A752A02CC1F008779FA /* MainTabBarC.swift */; };
 		1C0D1A792A037279008779FA /* FinanceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0D1A782A037279008779FA /* FinanceVC.swift */; };
 		1C0D1A7B2A0372CD008779FA /* FinanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0D1A7A2A0372CD008779FA /* FinanceTableViewCell.swift */; };
@@ -26,8 +29,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C0357FF2A0398F7008044D0 /* LastVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastVC.swift; sourceTree = "<group>"; };
+		1C0358012A03991B008044D0 /* LastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastTableViewCell.swift; sourceTree = "<group>"; };
+		1C0358032A03995A008044D0 /* LastMainTabBarC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastMainTabBarC.swift; sourceTree = "<group>"; };
+		1C0358062A04F604008044D0 /* TravelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelVC.swift; sourceTree = "<group>"; };
 		1C0D1A702A0231D6008779FA /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		1C0D1A732A023271008779FA /* NSObject + TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject + TableView.swift"; sourceTree = "<group>"; };
 		1C0D1A752A02CC1F008779FA /* MainTabBarC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarC.swift; sourceTree = "<group>"; };
 		1C0D1A782A037279008779FA /* FinanceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceVC.swift; sourceTree = "<group>"; };
 		1C0D1A7A2A0372CD008779FA /* FinanceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceTableViewCell.swift; sourceTree = "<group>"; };
@@ -57,6 +63,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C0357FE2A0398C7008044D0 /* LastScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1C0357FF2A0398F7008044D0 /* LastVC.swift */,
+				1C0358012A03991B008044D0 /* LastTableViewCell.swift */,
+				1C0358032A03995A008044D0 /* LastMainTabBarC.swift */,
+			);
+			path = LastScreen;
+			sourceTree = "<group>";
+		};
+		1C0358052A04F5F7008044D0 /* Travel */ = {
+			isa = PBXGroup;
+			children = (
+				1C0358062A04F604008044D0 /* TravelVC.swift */,
+			);
+			path = Travel;
+			sourceTree = "<group>";
+		};
 		1C0D1A6F2A0231BF008779FA /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
@@ -65,14 +89,6 @@
 				1C0D1A752A02CC1F008779FA /* MainTabBarC.swift */,
 			);
 			path = Crypto;
-			sourceTree = "<group>";
-		};
-		1C0D1A722A023253008779FA /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				1C0D1A732A023271008779FA /* NSObject + TableView.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		1C0D1A772A037219008779FA /* Finance */ = {
@@ -104,9 +120,10 @@
 		1C1EB03A29FA71CB00CF32F9 /* Neobis_iOS_UIScreens */ = {
 			isa = PBXGroup;
 			children = (
-				1C0D1A772A037219008779FA /* Finance */,
-				1C0D1A722A023253008779FA /* Extensions */,
+				1C0358052A04F5F7008044D0 /* Travel */,
 				1C0D1A6F2A0231BF008779FA /* Crypto */,
+				1C0D1A772A037219008779FA /* Finance */,
+				1C0357FE2A0398C7008044D0 /* LastScreen */,
 				1C47DBA229FFBD8E0036BF2A /* Weather */,
 				1C1EB03B29FA71CB00CF32F9 /* AppDelegate.swift */,
 				1C1EB03D29FA71CB00CF32F9 /* SceneDelegate.swift */,
@@ -205,15 +222,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C0358022A03991B008044D0 /* LastTableViewCell.swift in Sources */,
+				1C0358072A04F604008044D0 /* TravelVC.swift in Sources */,
 				1C1EB04029FA71CB00CF32F9 /* ViewController.swift in Sources */,
+				1C0358042A03995A008044D0 /* LastMainTabBarC.swift in Sources */,
 				1C47DBA62A00FFB00036BF2A /* CryptoVC.swift in Sources */,
 				1C47DBA429FFBDA60036BF2A /* WeekWetherVC.swift in Sources */,
-				1C0D1A742A023271008779FA /* NSObject + TableView.swift in Sources */,
 				1C1EB03C29FA71CB00CF32F9 /* AppDelegate.swift in Sources */,
 				1C0D1A762A02CC1F008779FA /* MainTabBarC.swift in Sources */,
 				1C0D1A7B2A0372CD008779FA /* FinanceTableViewCell.swift in Sources */,
 				1C1EB03E29FA71CB00CF32F9 /* SceneDelegate.swift in Sources */,
 				1C0D1A7D2A0372E2008779FA /* FinanceMainTabBarC.swift in Sources */,
+				1C0358002A0398F7008044D0 /* LastVC.swift in Sources */,
 				1C0D1A792A037279008779FA /* FinanceVC.swift in Sources */,
 				1C0D1A712A0231D6008779FA /* TableViewCell.swift in Sources */,
 				1C1EB05329FA770400CF32F9 /* WeatherVC.swift in Sources */,
